@@ -22,35 +22,99 @@ header {
         width: 100%;
         display: flex;
         justify-content: space-between;
-      }
-      .main__header-menu-list {
-        display: flex;
-        li {
-          padding: 0 10px;
+        .main__header-menu-list {
           display: flex;
-          a {
-            color: #000;
+          li {
+            padding: 0 10px;
+            display: flex;
+            a {
+              color: #000;
+              margin: auto;
+              font-family: "beRegular400";
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+        }
+        .main__header-btn {
+          height: 48px;
+          width: 213px;
+          background-color: $blue-cl;
+          border-radius: 40px;
+          display: flex;
+          p {
             margin: auto;
+            color: #ffffff;
             font-family: "beRegular400";
             font-size: 16px;
             line-height: 20px;
           }
         }
       }
-      .main__header-btn {
-        height: 48px;
-        width: 213px;
-        background-color: $blue-cl;
-        border-radius: 40px;
-        display: flex;
-        p {
-          margin: auto;
-          color: #ffffff;
-          font-family: "beRegular400";
-          font-size: 16px;
-          line-height: 20px;
+      .main__header-menu-mobile {
+        display: none;
+        .icon__menu-mobile {
+          span {
+            display: block;
+            height: 4px;
+            width: 50px;
+            background-color: $blue-cl;
+          }
+          &::before {
+            content: "";
+            display: block;
+            height: 4px;
+            width: 50px;
+            background-color: $blue-cl;
+            margin-bottom: 10px;
+          }
+          &::after {
+            content: "";
+            display: block;
+            height: 4px;
+            width: 50px;
+            background-color: $blue-cl;
+            margin-top: 10px;
+          }
+        }
+        .menu-mobile__option {
+          position: absolute;
+          top: var(--height-header);
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: #ccc;
+          display: none;
         }
       }
     }
+  }
+}
+
+@media screen and(max-width: 1200px) {
+  header .container .main__header .main__header-menu {
+    margin-left: 110px;
+  }
+}
+
+@media screen and(max-width: 993px) {
+  header .container .main__header {
+    .main__header-menu {
+      margin-left: 80px;
+      .main__header-btn {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and(max-width: 768px) {
+  header .container .main__header .main__header-menu {
+    display: none;
+  }
+  header .container .main__header .main__header-menu-mobile {
+    display: block;
+  }
+  header .container .main__header {
+    justify-content: space-between;
   }
 }

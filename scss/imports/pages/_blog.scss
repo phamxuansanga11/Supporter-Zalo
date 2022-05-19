@@ -1,0 +1,183 @@
+.background {
+  position: relative;
+  height: 430px;
+  margin-top: 82px;
+  > img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  .container {
+    h2 {
+      font-family: "beMedium500";
+      font-size: 20px;
+      line-height: 25px;
+      color: $blue-cl;
+      padding-top: 42px;
+      text-align: center;
+    }
+    .search {
+      width: 480px;
+      height: 48px;
+      border: 1px solid #00377f;
+      border-radius: 35px;
+      display: flex;
+      margin: 24px auto 0 auto;
+      i {
+        display: flex;
+        padding-left: 27px;
+        img {
+          margin: auto;
+        }
+      }
+      input {
+        outline: none;
+        border: none;
+        width: 80%;
+        padding-left: 15px;
+      }
+    }
+    .img__search {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.content__search {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  .--container__search {
+    .wrapper__grid {
+      display: flex;
+      .content__search-sidebar {
+        border-right: 1px solid #e0e0e0;
+        padding-right: 34px;
+        .top {
+          margin-bottom: 80px;
+          .sidebar__title {
+            width: 280px;
+            height: 40px;
+            background-color: #f7f8f9;
+            border-left: 10px solid $blue-cl;
+            border-top-left-radius: 4px;
+            margin-bottom: 31px;
+            p {
+              font-family: "beMedium500";
+              font-size: 18px;
+              line-height: 40px;
+              color: #1d1d1d;
+              padding-left: 12px;
+            }
+          }
+          .sidebar__list {
+            display: flex;
+            margin-bottom: 15px;
+            .img {
+            }
+            .text {
+              font-family: "beRegular400";
+              font-size: 14px;
+              line-height: 18px;
+              max-width: 212px;
+              margin-left: 14px;
+            }
+          }
+        }
+        .bottom {
+          .sidebar__title {
+            width: 280px;
+            height: 40px;
+            background-color: #f7f8f9;
+            border-left: 10px solid $blue-cl;
+            border-top-left-radius: 4px;
+            margin-bottom: 31px;
+            p {
+              font-family: "beMedium500";
+              font-size: 18px;
+              line-height: 40px;
+              color: #1d1d1d;
+              padding-left: 12px;
+            }
+          }
+          .sidebar__list {
+            width: 238px;
+            height: 48px;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 15px;
+            margin-left: 22px;
+            p {
+              font-family: "beRegular400";
+              font-size: 18px;
+              line-height: 48px;
+            }
+          }
+        }
+      }
+      .content__search-detail {
+        padding-left: 42px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 42px;
+        .content__search-item {
+          display: block;
+          > img {
+          }
+          h3 {
+            font-family: "beMedium400";
+            font-size: 22px;
+            line-height: 32px;
+            color: #3d3d3d;
+            margin-top: 10px;
+            margin-bottom: 13px;
+            max-width: 384px;
+          }
+          p {
+            font-family: "beRegular400";
+            font-size: 14px;
+            line-height: 20px;
+            color: #55555a;
+            max-width: 384px;
+          }
+          .hastag {
+            margin-top: 12px;
+            display: flex;
+            i {
+              img {
+              }
+            }
+            p {
+              margin-left: 10px;
+            }
+          }
+          .date__view {
+            display: flex;
+            .date {
+              display: flex;
+              i {
+                img {
+                }
+              }
+              p {
+                margin-left: 10px;
+              }
+            }
+            .view {
+              display: flex;
+              margin-left: 27px;
+              i {
+                img {
+                }
+              }
+              p {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

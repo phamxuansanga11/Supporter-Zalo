@@ -68,36 +68,81 @@ footer {
       .--nthchild4 {
         padding-left: 30px;
         .btn__download {
-          .btn {
-            width: 164px;
-            height: 48px;
-            background-color: #000000;
-            border-radius: 8px;
-          }
           .btn__download-chplay {
             margin-bottom: 26px;
-            i {
-              img {
-              }
-            }
-            .text {
-              p {
-              }
-            }
           }
           .btn__download-appstore {
             i {
               color: #f4f7ff;
-              img {
-              }
-            }
-            .text {
-              p {
-              }
             }
           }
         }
       }
     }
+  }
+}
+
+@media screen and(max-width: 993px) {
+  footer {
+    height: auto;
+    padding: 40px 0;
+  }
+  footer .--container__footer .wrapper__gird {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  footer .--container__footer .wrapper__gird .--nthchild1 .title {
+    justify-content: center;
+  }
+  footer .--container__footer .wrapper__gird .--nthchild3 .icon__content {
+    justify-content: center;
+    i {
+      margin: 0 12px;
+    }
+  }
+  footer .--container__footer .wrapper__gird .--nthchild4 {
+    display: grid;
+    .btn__download {
+      margin: auto;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  footer
+    .--container__footer
+    .wrapper__gird
+    .--nthchild4
+    .btn__download
+    .btn__download-chplay {
+    margin-right: 20px;
+  }
+  footer
+    .--container__footer
+    .wrapper__gird
+    .--nthchild4
+    .btn__download
+    .btn__download-appstore {
+    margin-left: 20px;
+  }
+  footer
+    .--container__footer
+    .wrapper__gird
+    .wrapper__gird-item
+    .text__content
+    p {
+    font-size: 20px;
+  }
+}
+
+@media screen and(max-width: 767px) {
+  footer
+    .--container__footer
+    .wrapper__gird
+    .wrapper__gird-item
+    .text__content
+    p {
+    line-height: 26px;
   }
 }

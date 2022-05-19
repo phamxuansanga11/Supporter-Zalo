@@ -50,5 +50,12 @@
 @font-face {
     font-family: "beBold600";
     src: url("../fonts/font-vietnampro/BeVietnamPro-Bold.ttf");
-    font-weight: 600;
+    /* font-weight: 400; */
+}
+
+@font-face {
+    font-family: "beItalic400";
+    src: url("../fonts/font-vietnampro/BeVietnamPro-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
 }
